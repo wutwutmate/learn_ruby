@@ -1,0 +1,18 @@
+
+
+def translate(word)
+  vowel = ['a','e','i','o','u']
+
+
+    if vowel.include? word[0]
+      word = word + 'ay'
+    else
+      if !(vowel.include? word[0]) && !(vowel.include? word[1]) && !(vowel.include? word[2])
+        word = word[3..(word.length - 1)] + word[0..2] + 'ay'
+      elsif !(vowel.include? word[0]) && !(vowel.include? word[1])
+        word = word[2..(word.length - 1)] + word[0..1] + 'ay'
+      else
+        word = word[1..(word.length - 1)] + word[0] + 'ay'
+      end
+    end
+end

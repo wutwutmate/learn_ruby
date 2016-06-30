@@ -96,19 +96,19 @@ end
 
 # http://en.wikipedia.org/wiki/Factorial
 describe "factorial" do
-  it "computes the factorial of 0" dio
-    expects(factorial(0)).to eq(0)
+  it "computes the factorial of 0" do
+    expect(factorial(0)).to eq(1)
   end
-  it "computes the factorial of 1"
-    expects(factorial(1)).to eq(1)
+  it "computes the factorial of 1" do
+    expect(factorial(1)).to eq(1)
   end
-  it "computes the factorial of 2"
-    expects(factorial(2)).to eq(2)
+  it "computes the factorial of 2" do
+    expect(factorial(2)).to eq(2)
   end
-  it "computes the factorial of 5"
-    expects(factorial(5)).to eq(120)
+  it "computes the factorial of 5" do
+    expect(factorial(5)).to eq(120)
   end
-  it "computes the factorial of 10"
-    expects(factorial(10)).to eq(3628800)
+  it "computes the factorial of 10" do
+    expect(factorial(10)).to eq(3628800)
   end
 end
