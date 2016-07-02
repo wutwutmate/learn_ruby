@@ -25,14 +25,12 @@ def titleize(title)
 
   array.each do |word|
     
-    if word.length < 5
-      word.downcase!
-    else
+    
       word.capitalize!
     end
    
   end
-  array[0].capitalize!
+  #array[0].capitalize!
   array[array.length - 1].capitalize!
   array.join(' ')
 end
